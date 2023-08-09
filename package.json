@@ -1,0 +1,23 @@
+{
+  "name": "music-hub",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "tailwind -i ./src/input.css -o ./public/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akintola4/music-hub.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akintola4/music-hub/issues"
+  },
+  "homepage": "https://github.com/akintola4/music-hub#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}
