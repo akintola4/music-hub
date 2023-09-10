@@ -19,5 +19,8 @@
   "homepage": "https://github.com/akintola4/music-hub#readme",
   "devDependencies": {
     "tailwindcss": "^3.3.3"
+  },
+  "dependencies": {
+    "@splidejs/splide": "^4.1.4"
   }
 }
