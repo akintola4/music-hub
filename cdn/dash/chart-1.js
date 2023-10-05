@@ -8,7 +8,7 @@
                     data: [100000, 150000, 100000, 150000, 100000, 120000, 220342, 100000, 150000, 100000, 150000, 100000],
                    // borderWidth: 2,
                     //borderColor: '#fff',
-                   backgroundColor:'#fff',
+                   backgroundColor:'#000',
                     color:'#fff',
                     tension: 0.3,
                 }]

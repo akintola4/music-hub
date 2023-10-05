@@ -1,0 +1,256 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user-dashboard</title>
+    <link rel="shortcut icon" href="img/logo.svg" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/143f4c7aad.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jsvectormap/dist/css/jsvectormap.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/jsvectormap"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jsvectormap/dist/maps/world.js"></script>
+</head>
+
+<body class=" text-black ">
+    <header class="fixed   bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-10  inset-x-0 top-0 z-10 sm:px-20">
+
+        <nav class="flex items-center  sm:hidden justify-between p-4" aria-label="Global">
+
+            <div class="mx flex flex-row items-center gap-5">
+                <img class="fill-white" src="/cdn/img/logo-black.svg" alt="">
+                <h4 class="text-black text-4xl font-bold">Speed Up</h4>
+            </div>
+            <button
+                class="px-3 outline-none mobile-menu-button rounded-md p-2 border sm:hidden flex text-black hover:bg-black hover:text-white">
+                <i class="fa-solid fa-bars"></i></button>
+        </nav>
+        <div class="block sm:hidden mobile-menu">
+            <ul class="mx-auto gap-20">
+                <a href="none" class="flex text-black flex-row gap-3 items-center hover:bg-gradient-to-tr hover:from-green-500 hover:to-green-700  hover:text-white p-2 hover:rounded-lg">
+                    <i class="fas fa-home fa-lg fa-fw"></i>
+                    <h4>Dashboard</h4>
+                </a>
+                <a href="none" class="flex text-black flex-row gap-3 items-center hover:bg-gradient-to-tr hover:from-green-500 hover:to-green-700  hover:text-white p-2 hover:rounded-lg">
+                    <i class="fas fa-project-diagram fa-lg fa-fw"></i>
+                    <h4>Projects</h4>
+                </a>
+                <a href="none" class="flex text-black flex-row gap-3 items-center hover:bg-gradient-to-tr hover:from-green-500 hover:to-green-700  hover:text-white p-2 hover:rounded-lg">
+                    <i class="fas fa-upload fa-lg fa-fw"></i>
+                    <h4>Upload</h4>
+                </a>
+                <a href="none" class="flex text-black flex-row gap-3 items-center hover:bg-gradient-to-tr hover:from-green-500 hover:to-green-700  hover:text-white p-2 hover:rounded-lg">
+                    fa-
+                    <h4>Promotions</h4>
+                </a>
+                <a href="none" class="flex text-black flex-row gap-3 items-center hover:bg-gradient-to-tr hover:from-green-500 hover:to-green-700  hover:text-white p-2 hover:rounded-lg">
+                    <i class="fa fa-group" aria-hidden="true"></i>
+                    <h4>Team</h4>
+                </a>
+                <a href="none" class="flex text-black flex-row gap-3 items-center hover:bg-gradient-to-tr hover:from-green-500 hover:to-green-700  hover:text-white p-2 hover:rounded-lg">
+                    <i class="fa fa-gear" aria-hidden="true"></i>
+                    <h4>Settings</h4>
+                </a>
+                <li class="py-3"><a href="login.html"
+                    class=" py-3 px-5 rounded-full hover:border border-green-100 text-black hover:bg-black hover:text-white  leading-8">Login
+                    in <span aria-hidden="true">→</span></a></li>
+            </ul>
+        </div>
+        <div>
+
+        </div>
+    </header>
+
+    <main class="flex mt-20 sm:mt-0 flex-row">
+        <section class="sidenav fixed  sm:w-2/12 hidden sm:block p-5   h-screen">
+            <div class="mx flex flex-row py-10 items-center sm:gap-5">
+                <img class=" w-3/12" src="/cdn//img/logo-black.svg" alt="">
+                <h4 class=" text-2xl font-bold">Speed Up</h4>
+            </div>
+            <div class="nav">
+                <div class=" flex flex-col gap-5">
+                    <a href="none" class="flex text-black flex-row gap-3 items-center hover:bg-gradient-to-tr hover:from-green-500 hover:to-green-700  hover:text-white p-2 hover:rounded-lg">
+                        <i class="fas fa-home fa-lg fa-fw"></i>
+                        <h4>Dashboard</h4>
+                    </a>
+                    <a href="none" class="flex text-black flex-row gap-3 items-center hover:bg-gradient-to-tr hover:from-green-500 hover:to-green-700  hover:text-white p-2 hover:rounded-lg">
+                        <i class="fas fa-project-diagram fa-lg fa-fw"></i>
+                        <h4>Projects</h4>
+                    </a>
+                    <a href="none" class="flex text-black flex-row gap-3 items-center hover:bg-gradient-to-tr hover:from-green-500 hover:to-green-700  hover:text-white p-2 hover:rounded-lg">
+                        <i class="fas fa-upload fa-lg fa-fw"></i>
+                        <h4>Upload</h4>
+                    </a>
+                    <a href="none" class="flex text-black flex-row gap-3 items-center hover:bg-gradient-to-tr hover:from-green-500 hover:to-green-700  hover:text-white p-2 hover:rounded-lg">
+                        fa-
+                        <h4>Promotions</h4>
+                    </a>
+                    <a href="none" class="flex text-black flex-row gap-3 items-center hover:bg-gradient-to-tr hover:from-green-500 hover:to-green-700  hover:text-white p-2 hover:rounded-lg">
+                        <i class="fa fa-group" aria-hidden="true"></i>
+                        <h4>Team</h4>
+                    </a>
+                    <a href="none" class="flex text-black flex-row gap-3 items-center hover:bg-gradient-to-tr hover:from-green-500 hover:to-green-700  hover:text-white p-2 hover:rounded-lg">
+                        <i class="fa fa-gear" aria-hidden="true"></i>
+                        <h4>Settings</h4>
+                    </a>
+                </div>
+                <div class=" flex flex-col mt-60 gap-5">
+                    <a href="none" class="flex text-black flex-row gap-3 items-center hover:bg-gradient-to-tr hover:from-green-500 hover:to-green-700  hover:text-white p-2 hover:rounded-lg">
+                        <i class="fa-solid fa-info"></i>
+                        <h4>Help & information</h4>
+                    </a>
+                    <a href="none" class="flex text-black flex-row gap-3 items-center hover:bg-gradient-to-tr hover:from-green-500 hover:to-green-700  hover:text-white p-2 hover:rounded-lg">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        <h4>Log out</h4>
+                    </a>
+                </div>
+            </div>
+
+
+        </section>
+        <section class="main-content flex flex-col  gap-10 sm:ml-64 sm:mr-10">
+            <div class="flex col-1 flex-col sm:flex-row items-center gap-10">
+                <div class="flex flex-row gap-10 p-5">
+                    <img src="/cdn/img/artist-2.svg" class=" border-2 rounded-full w-2/12" alt="">
+                    <div class="flex flex-col">
+                        <h4 class="text-4xl font-bold">Hello,Temitope</h4>
+                        <p class=" text-sm ">Welcome to your music promotion and Personal management
+                            dashboard!</p>
+                    </div>
+                </div>
+                <div class=" hidden sm:flex flex-row gap-3">
+                    <!-- <i class="fa fa-search rounded-full p-2 bg-white" aria-hidden="true"></i> -->
+                    <input id="search" name="search" class="p-2 rounded-full border" placeholder="Search" type="search">
+                    <!-- <i class="fa fa-bell rounded-full p-2 bg-white" aria-hidden="true"></i> -->
+                    <button type="button"
+                        class="relative rounded-full bg-white p-1 text-green-950  hover:text-green-500 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 focus:ring-offset-green-500">
+                        <span class="absolute -inset-1.5"></span>
+                        <span class="sr-only">View notifications</span>
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                            aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="hidden sm:flex">
+                    <button
+                        class="profile flex flex-row shadow-lg  text-black w-8/12 rounded-full p-1 items-center gap-3 ">
+                        <img src="/cdn/img/artist-2.svg" class=" rounded-full w-3/12" alt="">
+                        <h4>Temitope </h4>
+                        <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                    </button>
+                </div>
+
+            </div>
+            <div class="col-2 flex flex-col sm:flex-row  gap-20 rounded-lg">
+                <div
+                    class="col-2-1  shadow-xl hover:bg-gradient-to-tr hover:from-green-500 hover:to-green-700   flex flex-row gap-3 cursor-pointer items-center bg-white  hover:text-white text-green-950 p-5 rounded-lg">
+                    <img src="/cdn/img/artist-2.svg" class=" rounded-full w-2/12 border" alt="">
+                    <div class="flex flex-col gap-2">
+                        <p class=" text-sm "> Monthly Revenue </p>
+                        <div class="flex flex-row gap-3 items-center">
+                            <h4>$4,000 </h4>
+                            <h4 class="p-3 rounded-full  bg-green-500 text-white">2.4%</h4>
+                        </div>
+
+                        <p class=" text-sm "> Previous month <span class=" text-green-500">2.4%</span> </p>
+
+                    </div>
+                </div>
+                <div
+                    class="col-2-1 flex flex-row bg-gradient-to-tr hover:from-green-500 hover:to-green-700 shadow-xl  gap-3 cursor-pointer items-center bg-white  hover:text-white text-green-950 p-5 rounded-lg">
+                    <img src="/cdn/img/artist-2.svg" class=" rounded-full w-2/12 border" alt="">
+                    <div class="flex flex-col gap-2">
+                        <p class=" text-sm "> Monthly Sales </p>
+                        <div class="flex flex-row gap-3 items-center">
+                            <h4>$4,000 </h4>
+                            <h4 class="p-3 rounded-full  bg-green-500 text-white">2.4%</h4>
+                        </div>
+
+                        <p class=" text-sm "> Previous month <span class="text-green-500">2.4%</span> </p>
+
+                    </div>
+                </div>
+                <div
+                    class="col-2-1 flex flex-row gap-3 shadow-xl hover:bg-gradient-to-tr hover:from-green-500 hover:to-green-700   cursor-pointer items-center bg-white  hover:text-white text-green-950 p-5 rounded-lg">
+                    <img src="/cdn/img/artist-2.svg" class=" rounded-full w-2/12 border" alt="">
+                    <div class="flex flex-col gap-2">
+                        <p class=" text-sm ">Total profit</p>
+                        <div class="flex flex-row gap-3 items-center">
+                            <h4>$4,000 </h4>
+                            <h4 class="p-3 rounded-full  bg-green-500 text-white">2.4%</h4>
+                        </div>
+
+                        <p class=" text-sm "> Previous month <span class="text-green-500">2.4%</span> </p>
+
+                    </div>
+                </div>
+
+            </div>
+         
+            <div
+                class="col-3 flex flex-row hover:bg-gradient-to-tr hover:from-green-500 hover:to-green-700  shadow-lg  cursor-pointer hover:text-white  rounded-lg p-5 place-content-between items-center">
+                <div class="col-3-1 flex flex-col gap-5">
+                    <div class="">
+                        <h4 class=" text-3xl">Total Music Streams</h4>
+                        <p class="text-sm">Last 60 days</p>
+                    </div>
+                    <div class="flex flex-col gap-3">
+                        <div class="flex flex-row items-center gap-3">
+                            <h4 class=" text-3xl">$956.82k</h4>
+                            <span class="text-sm p-2 rounded-full bg-white text-green-500"><i
+                                    class="fa fa-arrow-circle-o-up " aria-hidden="true"></i> +5.7%</span>
+                        </div>
+
+                        <p class="text-sm "><span class="text-green-500 p-3 rounded-full bg-white">+8.20k</span> vs prev. 60 days</p>
+                    </div>
+                </div>
+                <div class="col-3-2">
+                    <canvas id="myChart-1" style="margin: 0 auto;" width="400" height="210"
+                        class="chartjs-render-monitor"> </canvas>
+                </div>
+            </div>
+            <div class="col flex flex-col shadow-lg p-5 rounded-lg gap-5">
+                <h4 class="text-2xl">Global Performance</h4>
+                <div id="map" class="mx-auto" style="height: 400px"></div>
+            </div>
+            <div
+                class="col-4 flex p-5 hover:bg-gradient-to-tr hover:from-green-500 hover:to-green-700  cursor-pointer hover:text-white rounded-lg shadow-lg flex-col gap-5">
+                <div class="col-4-1 flex flex-row items-center place-content-between">
+                    <h4 class="text-2xl">Performance</h4>
+                    <button class="profile bg-white text-black sm:w-2/12 rounded-full p-1 items-center">
+                        <input type="date" name="" id="">
+                    </button>
+                </div>
+                <div class="col-4-2 w-6/12 mx-auto">
+                    <canvas id="myChart-2" width="300" height="110" class="chartjs-render-monitor"> </canvas>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.2.1/dist/chart.umd.min.js"></script>
+    <script src="chart-1.js"></script>
+    <script src="chart-2.js"></script>
+    <script>
+        var map = new jsVectorMap({
+            selector: "#map",
+            map: "world",
+          });
+    </script>
+      <script>
+        // Grab HTML Elements
+        const btn = document.querySelector("button.mobile-menu-button");
+        const menu = document.querySelector(".mobile-menu");
+
+        // Add Event Listeners
+        btn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+        });
+
+    </script>
+</body>
+
+</html>

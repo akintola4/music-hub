@@ -14,7 +14,7 @@
 
 
 <body class=" text-white">
-    <header class="fixed  bg-green-900 inset-x-0 top-0 z-10 px-20">
+    <header class="fixed   bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-10  inset-x-0 top-0 z-10 sm:px-20">
 
         <nav class="flex items-center justify-between p-4" aria-label="Global">
 
@@ -23,10 +23,11 @@
                 <h4 class="text-white text-lg">Speed Up</h4>
             </div>
             <ul class="mx-auto text-white hidden sm:flex  gap-10">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="">Support</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="">Grow</a></li>
+                <li><a class="relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[2px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center" href="index.html">Home</a></li>
+                <li><a class="relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[2px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center" href="">Support</a></li>
+                <li><a class="relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[2px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center" href="about.html">About</a></li>
+                <li><a class="relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[2px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center" href="">Grow</a></li>
+                
             </ul>
 
             <a href="login.html"
@@ -37,11 +38,14 @@
                 <i class="fa-solid fa-bars"></i></button>
         </nav>
         <div class="block sm:hidden mobile-menu">
-            <ul class="mx-auto text-white gap-10">
+            <ul class="mx-auto text-white gap-20">
                 <li class=" py-3 px-5 hover:bg-green-500  transition duration-300"><a href="index.html">Home</a></li>
                 <li class=" py-3 px-5 hover:bg-green-500  transition duration-300"><a href="">Support</a></li>
                 <li class=" py-3 px-5 hover:bg-green-500  transition duration-300"><a href="about.html">About</a></li>
                 <li class=" py-3 px-5 hover:bg-green-500  transition duration-300"><a href="">Grow</a></li>
+                <li class="py-3"><a href="login.html"
+                    class=" py-3 px-5 rounded-full hover:border border-green-100 text-white hover:bg-green-100 hover:text-black  leading-8">Login
+                    in <span aria-hidden="true">→</span></a></li>
             </ul>
         </div>
         <div>

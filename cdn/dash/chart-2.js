@@ -9,7 +9,7 @@ new Chart(ctx2, {
            // borderWidth: 2,
             //borderColor: '#fff',
            backgroundColor:[
-            'green','#fff',
+            'green','purple',
             'red','orange','black'
            ], hoverOffset: 10,
             color:'#fff',
